@@ -1,0 +1,44 @@
+body {
+    background-color: #fff;
+    font-size: 16px;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.625rem;
+    margin-top: 0.625rem;
+    font-family: "Oswald", sans-serif;
+}
+
+#header-container #logo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.625rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text{
+    margin-left:  0.625rem;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0.625rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9375rem;
+    padding: 0.9375rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    background-color: #e50c39;
+    color: #fff;
+  }
