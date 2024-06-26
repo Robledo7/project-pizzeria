@@ -1,3 +1,7 @@
+:root {
+  --color-nav: #333;
+}
+
 body {
   background-color: #fff;
   font-size: 16px;
@@ -36,7 +40,7 @@ nav ul li {
 nav ul li a {
   font-size: 0.9375rem;
   padding: 0.9375rem;
-  color: #333;
+  color: var(--color-nav);
   text-decoration: none;
 }
 
@@ -62,10 +66,12 @@ nav ul li a:hover {
 }
 
 .gallery li {
-  display: flex; /*  Para que las columnas tengan la misma altura. */
+  display: flex;
+  /*  Para que las columnas tengan la misma altura. */
   box-sizing: border-box;
   list-style: none;
-  width: calc(100% / 3); /* 33.33% */
+  width: calc(100% / 3);
+  /* 33.33% */
   padding: 10px;
 }
 
@@ -75,9 +81,11 @@ nav ul li a:hover {
 }
 
 .gallery li .card img {
-  width: 100%; /* Imagenes responsivas */
-  max-width: 100%; /* Imagenes responsivas */
-  height:auto;
+  width: 100%;
+  /* Imagenes responsivas */
+  max-width: 100%;
+  /* Imagenes responsivas */
+  height: auto;
   margin-bottom: 6px;
   justify-content: center;
 }
@@ -91,7 +99,7 @@ nav ul li a:hover {
   text-transform: uppercase;
   color: #17181a;
   letter-spacing: 2px;
-  height:10vh;
+  height: 10vh;
 }
 
 
@@ -110,7 +118,7 @@ nav ul li a:hover {
   color: #1a5b5e;
 }
 
-.gallery li .card .button{
+.gallery li .card .button {
   margin-top: 5px;
   width: 100%;
   padding: 7px;
@@ -122,4 +130,52 @@ nav ul li a:hover {
   font-weight: 600;
   color: #fff;
   font-family: "Work Sans", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+}
+
+#social i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-nav);
+}
+
+@media (max-width: 960px) {
+  #header-container {
+    flex-direction: column;
+  }
+
+  #header-container #logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .gallery li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .img-jpg {
+    width: 100%;
+    /* Imagenes responsivas */
+    max-width: 100%;
+    /* Imagenes responsivas */
+    height: auto;
+  }
 }
