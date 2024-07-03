@@ -11,3 +11,17 @@ body{
     border: none;
     padding: 15px 35px 45px 35px;
   }
+
+  .form-signin-heading {
+    margin-bottom: 30px;
+  }
+
+  input[type="text"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }

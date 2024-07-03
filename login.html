@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,13 +17,25 @@
 
 <body>
     <div class="d-flex align-items-center justify-content-center vh-100">
-
-        <form action="" method="POST" accept-charset="utf-8">
+        <form class="form-signin" action="" method="POST" accept-charset="utf-8">
             <div class="d-flex align-items-center justify-content-center">
                 <img src="img/users.svg" alt="">
-
+            </div>
+            <h2 class="text-center form-signin-heading">USUARIO</h2>
+            <input type="text" placeholder="Usuario o email" required id="username" name="username"
+                class="form-control login-input" autofocus>
+            <br />
+            <input type="password" placeholder="Contraseña" required id="password" name="password"
+                class="form-control login-input" />
+            <br />
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg btn-block" id="login" type="submit">
+                    Login
+                </button>
+            </div>
         </form>
     </div>
-    
+    <script src="js/login.js"></script>
 </body>
+
 </html>
