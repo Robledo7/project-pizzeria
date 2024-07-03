@@ -1,0 +1,13 @@
+body{
+    font-family: "Lato", sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 380px;
+    background-color: #fff;
+    border: none;
+    padding: 15px 35px 45px 35px;
+  }
