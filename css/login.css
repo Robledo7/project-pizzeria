@@ -25,3 +25,9 @@ body{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
+  #errorMessages{
+    text-align: center;
+    color:#d1001f;
+    font-size:0.8rem;
+  }
