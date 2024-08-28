@@ -4,7 +4,7 @@
  * 
  * 
  * @author Robledo <lurobledo.scl@gmail.com>
- * @link https://github.com/cealonso/php-mysql-pdo-database-class
+ * @link https://github.com/Robledo7/php-mysql-pdo-database-class.git
  * @version 1.0.0
  * @copyright 2024 
  * 
