@@ -1,0 +1,12 @@
+nav {
+    list-style: none;
+    display: inline;
+    margin: 0.625rem;
+  }
+  
+ /* nav a {
+    font-size: 0.9375rem;
+    padding: 0.9375rem;
+    color: var(--color-nav);
+    text-decoration: none;
+  }
