@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.5/css/dataTables.dataTables.css">
 
     <link rel="stylesheet" href="css/insert_products.css">
+    
 </head>
 
 <body>
@@ -82,10 +83,10 @@
                     <?php echo $row['DATE']; ?>
                 </td>
                 <td>
-                    <a href="#">Elimminar</a>
+                 <a href="#" onclick="deleteProduct(<?php echo $row['id_product'] ?>)"> Eliminar Producto</a>
                 </td>
                 <td>
-                    <a href="#">Actualizar</a>
+                <a href="#" onclick="updateProduct(<?php echo $row['id_product'] ?>)"> Actualizar Producto</a>
                 </td>
             </tr>
         <?php
@@ -107,7 +108,27 @@
             },
         });
     </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js" integrity="sha512-oVbWSv2O4y1UzvExJMHaHcaib4wsBMS5tEP3/YkMP6GmkwRJAa79Jwsv+Y/w7w2Vb/98/Xhvck10LyJweB8Jsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script> function deleteProduct(cod){
+        bootbox.confirm("Desea ud. eliminar realmente el id " + cod, function(result){
+            if(result){
+                window.location="delete.php?q="+cod;
+            }
+            
+        });
+    }
+    </script>
+    
+    <script> function updateProduct(cod){
+        
+                window.location="edit.php?q="+cod;
 
+            
+        
+    }
+    </script>
 
 </body>
 

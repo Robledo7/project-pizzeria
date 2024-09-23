@@ -29,6 +29,12 @@ class Db
        $stmt->execute($args);
        return $stmt;
      } 
+    
+    public function prepare($query)
+     {
+        return $this->connection->prepare($query);
+    }
+    
     public function close()
     {
         $this->connection = null;

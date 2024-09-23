@@ -13,11 +13,21 @@
 </head>
 
 <body>
+
 <div class="container">
 <div class="row">
 <div class="col-md-12">
 				<h3 class="text-center">INGRESO DE PRODUCTOS</h3>
 </div>
+
+<div class="text-right">
+<div class="container">
+<div class="col-md-12">
+<a href="welcome.php" class="btn btn-success">REGRESAR</a>
+</div>
+</div>
+</div>
+
 <div class="col-md-12">
 <form method="post" accept-charset="utf-8" action="save_products.php" class="form-group" enctype="multipart/form-data">
 
@@ -66,6 +76,8 @@ foreach ($data as $row) {
 </div>
 </div>
 </div>
+
+
 
 
 
