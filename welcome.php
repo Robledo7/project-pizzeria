@@ -19,7 +19,7 @@
     <nav class="navtop">
         <div>
             <h1>Panel de Administrador</h1>
-            <a href="logout.php">Logout</a>
+            <a href="logout.php" class="btn btn-primary">Logout</a>
         </div>
     </nav>
 
@@ -40,7 +40,7 @@
 
         <br/>
         <nav>
-            <a href="insert_products.php">INSERTAR PRODUCTOS</a>
+            <a href="insert_products.php" class="btn btn-success">INSERTAR PRODUCTOS</a>
         </nav>
 
         <?php
@@ -60,7 +60,7 @@
         include_once("config_products.php");
         include_once("db.class.php");
         $link = new Db();
-        $sql = "SELECT c.category_name,p.id_product,p.product_name,p.price,date_format(p.start_date,'%d/%m/%Y') as 'DATE' FROM products p inner join categories c on p.id_category=c.id_category";
+       $sql = "SELECT c.category_name,p.id_product,p.product_name,p.price,date_format(p.start_date,'%d/%m/%Y') as 'DATE' FROM products p inner join categories c on p.id_category=c.id_category";
         $stmt = $link->run($sql, NULL);
         $data = $stmt->fetchAll();
         foreach ($data as $row) {
@@ -122,8 +122,11 @@
     </script>
     
     <script> function updateProduct(cod){
-        
+         bootbox.confirm("Desea Ud. actualizar realmente el id "+cod,function(result){
+            if(result){
                 window.location="edit.php?q="+cod;
+            }   
+        });
 
             
         

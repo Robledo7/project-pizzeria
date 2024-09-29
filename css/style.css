@@ -175,6 +175,25 @@ footer {
   opacity:0.9;
 }
 
+/* Search */
+#search-container {
+  display: flex;
+  justify-content: center;
+}
+
+search-container input {
+  padding: 1em 0.3em;
+}
+
+#search-container button{
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #E82A51;
+  color: #fff;
+}
+
+
+
 @media (max-width: 960px) {
   #header-container {
     flex-direction: column;
@@ -203,3 +222,4 @@ footer {
     height: auto;
   }
 }
+
