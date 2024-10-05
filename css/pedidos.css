@@ -1,0 +1,12 @@
+.navbar-red {
+    background-color: #e50c39; 
+}
+
+.navbar-red .navbar-brand, 
+.navbar-red .nav-link {
+    color: #fff; 
+}
+
+.navbar-red .nav-link:hover {
+    color: #f1f1f1; 
+}

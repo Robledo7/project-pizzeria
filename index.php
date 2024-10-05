@@ -36,7 +36,7 @@
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">NOSOTROS</a></li>
-                    <li><a href="#">SUCURSALES & DELIVERY</a></li>
+                    <li><a href="sucursales.php">SUCURSALES & DELIVERY</a></li>
                     <li><a href="#">CONTACTO</a></li>
                 </ul>
             </nav>
@@ -77,7 +77,7 @@
                 echo "No hay resultados";
                 }
                 //VER CÒMO HACER PARA QUE QUEDE MÁS ESTÉTICO//
-               // else
+                else
                 {
                   //  echo "Se han encontrado " . $stmt->rowCount(). " resultados";
                 }

@@ -1,0 +1,26 @@
+ /* Personalizar el color rojo del navbar */
+.navbar-red {
+     background-color: #e50c39;
+     /* Rojo brillante */
+ }
+
+.navbar-red .navbar-brand,
+.navbar-red .nav-link {
+     color: #fff;
+     /* Color blanco para el texto */
+ }
+
+.navbar-red .nav-link:hover {
+     color: #f1f1f1;
+     /* Texto ligeramente más claro al pasar el mouse */
+ }
+
+ /*Botones de Wsp y Maps*/
+.btn-custom {
+    flex: 1; 
+    margin-right: 10px;  
+}
+
+.btn-custom:last-child {
+    margin-right: 0; 
+}
