@@ -37,7 +37,6 @@
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">NOSOTROS</a></li>
                     <li><a href="sucursales.php">SUCURSALES & DELIVERY</a></li>
-                    <li><a href="sucursales.php">SUCURSALES & DELIVERY</a></li>
                     <li><a href="#">CONTACTO</a></li>
                 </ul>
             </nav>
