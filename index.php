@@ -82,7 +82,6 @@
                   //  echo "Se han encontrado " . $stmt->rowCount(). " resultados";
                 }
                 
-                
             $data = $stmt->fetchAll();
             try {
                 // Conexion a la Base de Datos
