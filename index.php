@@ -76,7 +76,7 @@
             if ($stmt->rowCount()==0){
                 echo "No hay resultados";
                 }
-                //VER CÒMO HACER PARA QUE QUEDE MÁS ESTÉTICO//
+                //VER CÓMO HACER PARA QUE QUEDE MÁS ESTÉTICO//
                 else
                 {
                   //  echo "Se han encontrado " . $stmt->rowCount(). " resultados";
